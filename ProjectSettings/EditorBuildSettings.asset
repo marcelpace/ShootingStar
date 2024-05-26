@@ -8,9 +8,21 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/0 Scenes/SampleScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 1
+  - enabled: 0
     path: Assets/0 Scenes/Test01_BoxCol.unity
     guid: 4fe7b3656d415254ab64042df98493a6
+  - enabled: 0
+    path: Assets/0 Scenes/Test02_RigBod.unity
+    guid: 955a11b77351f5d49b75852ec1881e7c
+  - enabled: 1
+    path: Assets/0 Scenes/01 Level 1.unity
+    guid: a93bd1679c3de4240818aa013ca9a2d3
+  - enabled: 1
+    path: Assets/0 Scenes/02 Transition 1-2.unity
+    guid: cf6835e28d7fae04b87022b4cbfe8c65
+  - enabled: 1
+    path: Assets/0 Scenes/03 Level 2.unity
+    guid: 3b596ec271b8fef4b852bcdfc2b51709
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 73cc7b8c099958343b38952dae35b06e, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 86178488808693b49a7a9582eb3dc173, type: 2}
