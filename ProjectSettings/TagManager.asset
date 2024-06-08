@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - JetPack
   - SceneTitle
+  - StopWall
+  - TransitionWall
+  - DeathGround
   layers:
   - Default
   - TransparentFX

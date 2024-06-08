@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,10 +12,10 @@ public class SceneManagerScript : MonoBehaviour {
 
     private TextMeshProUGUI sceneTitle;
 
+    private ScreenTransistor screenTransistor;
+    private DeathCall deathCall;
 
-    [HideInInspector] public GameObject player;
   
-
 
 
     void Awake() {
@@ -29,24 +29,29 @@ public class SceneManagerScript : MonoBehaviour {
         //Debug.Log("Active Scene name is: " + currentScene.name + "    Active Scene index: " + currentScene.buildIndex);
 
         // Screen constrains
-        print("Screen width: " +Screen.width + ", Screen height: " +Screen.height);
+        //print("Screen width: " +Screen.width + ", Screen height: " +Screen.height);
 
-        player = GameObject.FindWithTag("Player");
+
+        screenTransistor = GameObject.FindWithTag("TransitionWall").GetComponent<ScreenTransistor>();        
+        deathCall = GameObject.FindWithTag("DeathGround").GetComponent<DeathCall>();
+
     }
 
        
 
 
     
-
-
     // Update is called once per frame
     void Update() {
 
-        if(Input.GetKeyDown(KeyCode.N)) {
-            print(currentScene.buildIndex);
+        if(screenTransistor.transitToNextScreen) {
             SceneManager.LoadScene(currentScene.buildIndex+1);
-            
+            screenTransistor.transitToNextScreen = false;
+        }
+
+        if(deathCall.isPlayerDead) {
+            SceneManager.LoadScene(currentScene.buildIndex);
+            deathCall.isPlayerDead = false;
         }
     }
 }

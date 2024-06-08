@@ -115,7 +115,7 @@ public class PlayerController_RigBod : MonoBehaviour {
 
     #region Collision
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground") {
+        if (collision.gameObject.CompareTag("Ground")) {
             isGrounded = true;
 
             //this will start a countdown to recharge the fuel
@@ -127,7 +127,7 @@ public class PlayerController_RigBod : MonoBehaviour {
 
 
     void OnCollisionExit2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground") {
+        if (collision.gameObject.CompareTag("Ground")) {
             isGrounded = false; 
         }
     }
@@ -195,7 +195,7 @@ public class PlayerController_RigBod : MonoBehaviour {
  
     }
 
-
+    
     void Jump() {
 
         // Initialize jump input

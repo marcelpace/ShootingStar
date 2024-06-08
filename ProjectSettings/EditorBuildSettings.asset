@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0 Scenes/03 Level 2.unity
     guid: 3b596ec271b8fef4b852bcdfc2b51709
+  - enabled: 1
+    path: Assets/0 Scenes/04 Transition 2-3.unity
+    guid: df7af1ec0d4dead4aaa32ab6fb21ef6b
+  - enabled: 1
+    path: Assets/0 Scenes/05 Level 3.unity
+    guid: a38a6a4e0f09b18448df1fa9d055f649
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 73cc7b8c099958343b38952dae35b06e, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 86178488808693b49a7a9582eb3dc173, type: 2}
